@@ -4,7 +4,7 @@ let roblox = require('roblox-js');
 let bot = new Discord.Client(); // A client that we will use as our bot
 
 // LOGIN INFO
-let token = "NDY1MTA4MjU5MzMwNTg4Njg0.DiIwuQ.6gYSEJ2TIyYZqDCdRENI_yw3c38"; // Discord login token
+let token = "NDY1MTQ2ODgzMjA0MTg2MTMy.DiJRYg.MicKOdnT4pYHS5ueqJAVvqC6M78"; // Discord login token
 let username = "platinummeatball"; // ROBLOX
 let password = "omgomgomg"; // ROBLOX
 
