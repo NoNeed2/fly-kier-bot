@@ -50,3 +50,5 @@ bot.on("message", async message => { // Event runs when there is a new message
                 // message.channel.send('Shouted to the group!') // OPTIONAL - Sends a message to the channel
             })
             .catch(function(error) { // This is a catch in the case that there's an error. Not using this will result in an unhandled rejection error.
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
