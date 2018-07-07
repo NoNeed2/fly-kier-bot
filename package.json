@@ -1,0 +1,25 @@
+var discord = require('discord.js');
+var client = new discord.Client();
+var token = "NDY1MTA4MjU5MzMwNTg4Njg0.DiIwuQ.6gYSEJ2TIyYZqDCdRENI_yw3c38"
+client.login(token)
+
+client.on("ready", () => {
+  client.user.setGame(`Making HL3`);
+  console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
+});
+
+client.on('guildMemberAdd', member => {
+  let guild = member.guild;
+  let user = member.user
+  console.log(`${user.tag} joined ${guild}`)
+});
+
+client.on('guildMemberRemove', member => {
+  let guild = member.guild;
+  let user = member.user
+  console.log(`${user.tag} left ${guild}`)
+});
+
+client.on('message', (message) => {
+    console.log(`${message.author} said ${message.content}`)
+});
